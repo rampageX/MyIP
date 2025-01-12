@@ -15,7 +15,7 @@
             "title": "Préférences",
             "preferenceTips": "Ces paramètres sont enregistrés dans votre navigateur pour une utilisation ultérieure. Certains paramètres nécessitent un rafraîchissement de la page pour prendre effet.",
             "colorScheme": "Schéma de Couleurs",
-            "colorAuto": "Par Défaut Système",
+            "systemAuto": "Système",
             "colorLight": "Jour",
             "colorDark": "Nuit",
             "ipSourcesToCheck": "Serveurs pour vérifier les adresses IP",
@@ -32,8 +32,37 @@
             "popupConnectivityNotifications": "Alertes de Connectivité Pop-up",
             "popupConnectivityNotificationsTips": "Activé, les résultats de la première vérification sont affichés sous forme d'alerte pop-up.",
             "ipDB": "Base de données de géolocalisation IP",
-            "ipDBTips": "Vous pouvez sélectionner la source de données de géolocalisation IP par défaut. Si la source sélectionnée n'est pas disponible, le système utilisera les sources suivantes."
+            "ipDBTips": "Vous pouvez sélectionner la source de données de géolocalisation IP par défaut. Si la source sélectionnée n'est pas disponible, le système utilisera les sources suivantes.",
+            "language": "Paramètres de langue",
+            "languageTips": "Rafraîchissement du navigateur pour prendre effet."
         }
+    },
+    "securitychecklist": {
+        "Title": "Liste de vérification de sécurité",
+        "Note": "Ceci est une liste de vérification de cybersécurité très complète, couvrant des aspects tels que la sécurité des mots de passe, la sécurité de navigation, et la sécurité des dispositifs mobiles. Dans l'environnement actuel, une fuite d'informations peut entraîner des pertes significatives, il est donc nécessaire de s'assurer que nous protégeons notre vie privée et augmentons la sécurité de nos accès lors de la connexion à Internet.",
+        "Note2": "Cette liste contient de nombreux éléments; vous n'avez pas besoin de tout vérifier en une seule fois. Les progrès seront sauvegardés dans le navigateur, et vous pouvez revenir à tout moment pour continuer les vérifications.",
+        "Progress": "Progression des vérifications",
+        "Item": "Élément",
+        "Items": "Élément(s) ",
+        "Priority": "Priorité",
+        "Ignore": "Ignorer",
+        "alert-total": "La vérification de sécurité a un total de",
+        "alert-checked": "Vous avez complété",
+        "alert-ignored": "Ignoré",
+        "alert-unchecked": "Non vérifié.",
+        "Checked": "Vérifié",
+        "Ignored": "Ignoré",
+        "Unchecked": "Non vérifié",
+        "Basic": "De base",
+        "Optional": "En option",
+        "Essential": "Essentiel",
+        "Advanced": "Avancé",
+        "Reset": "Réinitialiser",
+        "ShowAll": "Afficher tout",
+        "ShowUnchecked": "Afficher les éléments non cochés",
+        "ShowIgnored": "Afficher les éléments ignorés",
+        "ShowChecked": "Afficher les éléments cochés",
+        "Loading": "Chargement..."
     },
     "shell": {
         "Title": "API de ligne de commande",
@@ -196,7 +225,8 @@
         "Whois": "Recherche d'informations sur l'enregistrement de domaine/IP",
         "InvisibilityTest": "Vérifiez si vous utilisez un proxy ou un VPN",
         "MacChecker": "Requête d'informations d'une adresse physique",
-        "BrowserInfo": "Vérifier les informations du navigateur et l'empreinte digitale"
+        "BrowserInfo": "Vérifier les informations du navigateur et l'empreinte digitale",
+        "SecurityChecklist": "Guide pour sécuriser votre vie numérique"
     },
     "macchecker": {
         "Title": "Recherche MAC",
@@ -271,7 +301,8 @@
         "QueryIP": "Interroger l'adresse IP",
         "GithubLink": "Voir le code source sur GitHub",
         "RefreshRuleTests": "Actualiser les tests de règles",
-        "Shell": "Ouvrir le shell"
+        "Shell": "Ouvrir le shell",
+        "qualityScoreExplain": "Le score de qualité IP est calculé sur la base de plusieurs facteurs pondérés, incluant le type d'IP, si c'est un proxy/VPN, et le nombre d'événements d'attaque récemment détectés provenant de cette IP. Un score plus élevé indique une meilleure qualité de l'IP, réduisant la probabilité d'être bloqué par le contrôle de risques sur certains sites."
     },
     "ipInfos": {
         "id": "ipinfos",
@@ -293,6 +324,8 @@
         "SelectSource": "Source de géolocalisation IP",
         "type": "Type",
         "isProxy": "Proxy",
+        "qualityScore": "Qualité IP",
+        "qualityScoreUnknown": "Score inconnu",
         "ASNInfo": {
             "note": "Données associées à cet AS :",
             "asnName": "Nom de l'AS :",
@@ -374,7 +407,10 @@
         "gaming": ", Jeu : ",
         "rtc": ", Chat vidéo : ",
         "score": "Sur la base du test de vitesse, voici les scores de qualité suivants :",
-        "resultNote": ". Le score est donné à titre indicatif seulement."
+        "resultNote": ". Le score est donné à titre indicatif seulement.",
+        "connectionFrom": "Test de vitesse terminé depuis votre IP: ",
+        "connectionTo": " vers le serveur de test:",
+        "connectionEnd": " ."
     },
     "pingtest": {
         "id": "pingtest",
@@ -458,7 +494,8 @@
         "MacChecker": "Ouvrir le Recherche de MAC",
         "BrowserInfo": "Ouvrir l'Info du navigateur",
         "fullScreenAdvancedTools": "Outils avancés en plein écran",
-        "Shell": "Ouvrir le Shell"
+        "Shell": "Ouvrir le Shell",
+        "SecurityChecklist": "Ouvrir la Liste de sécurité"
     },
     "page": {
         "title": "IPCheck.ing - Vérifier mon adresse IP et géolocalisation - Vérifier l'adresse IP de connexion WebRTC - Test de fuite DNS - Test de vitesse - Jason Ng Open Source",
@@ -486,7 +523,8 @@
         "personal": "Site personnel",
         "blog": "Mon blog",
         "retiremoney": "Planificateur futur",
-        "twitter": "Twitter"
+        "twitter": "Twitter",
+        "Sponsor": "Sponsor"
     },
     "specialthanks": {
         "Title": "Merci spécial",
@@ -885,6 +923,38 @@
                     {
                         "type": "improve",
                         "change": "Le test de fuite DNS peut maintenant afficher des informations régionales"
+                    }
+                ]
+            },
+            {
+                "version": "v4.4",
+                "date": "Dec 7, 2024",
+                "content": [
+                    {
+                        "type": "add",
+                        "change": "Préférences de langue"
+                    },
+                    {
+                        "type": "improve",
+                        "change": "Fournisseur de carte changé en Google"
+                    },
+                    {
+                        "type": "improve",
+                        "change": "Autres optimisations générales"
+                    }
+                ]
+            },
+            {
+                "version": "v4.5",
+                "date": "Dec 25, 2024",
+                "content": [
+                    {
+                        "type": "add",
+                        "change": "Liste de vérification de sécurité"
+                    },
+                    {
+                        "type": "improve",
+                        "change": "Autres optimisations générales"
                     }
                 ]
             }

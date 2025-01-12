@@ -15,7 +15,7 @@
       "title": "Preferences",
       "preferenceTips": "These settings are saved in your browser for easy reuse. Some options require refreshing the page to take effect.",
       "colorScheme": "Color Scheme",
-      "colorAuto": "Auto",
+      "systemAuto": "Auto",
       "colorLight": "Day",
       "colorDark": "Night",
       "ipSourcesToCheck": "Servers To Check IPs",
@@ -32,8 +32,37 @@
       "popupConnectivityNotifications": "Pop-up Connectivity Alerts",
       "popupConnectivityNotificationsTips": "When enabled, the initial check's results are shown as a pop-up alert.",
       "ipDB": "IP Geolocation Database",
-      "ipDBTips": "You can select the default IP geolocation source to use. If the selected source is unavailable, the system will use the subsequent sources in order."
+      "ipDBTips": "You can select the default IP geolocation source to use. If the selected source is unavailable, the system will use the subsequent sources in order.",
+      "language": "Language Setting",
+      "languageTips": "Refreshing the browser will take effect."
     }
+  },
+  "securitychecklist": {
+    "Title": "Security Checklist",
+    "Note": "This is a very comprehensive cybersecurity checklist covering aspects such as password security, browsing security, and mobile device security. In the current environment, information leaks can lead to significant losses, thus it is necessary to ensure that we protect our privacy and enhance the security of our access while connected to the internet.",
+    "Note2": "This list contains many items; you do not need to check everything at once. Progress will be saved in the browser, and you can return at any time to continue the checks.",
+    "Progress": "Check Progress",
+    "Item": "Item",
+    "Items": "Item(s) ",
+    "Priority": "Priority",
+    "Ignore": "Ignore",
+    "alert-total": "The security check has a total of",
+    "alert-checked": "You have completed",
+    "alert-ignored": "Ignored",
+    "alert-unchecked": "Unchecked.",
+    "Checked": "Checked",
+    "Ignored": "Ignored",
+    "Unchecked": "Unchecked",
+    "Basic": "Basic",
+    "Optional": "Optional",
+    "Essential": "Essential",
+    "Advanced": "Advanced",
+    "Reset": "Reset Checklist",
+    "ShowAll": "Show All",
+    "ShowUnchecked": "Show Unchecked",
+    "ShowIgnored": "Show Ignored",
+    "ShowChecked": "Show Checked",
+    "Loading": "Loading..."
   },
   "shell": {
     "Title": "Command Line API",
@@ -196,7 +225,8 @@
     "Whois": "Search for domain/IP registration information",
     "InvisibilityTest": "Check if you are using a proxy or VPN",
     "MacChecker": "Query information of a physical address",
-    "BrowserInfo": "Check browser information and fingerprint"
+    "BrowserInfo": "Check browser information and fingerprint",
+    "SecurityChecklist": "Guide to securing your digital life"
   },
   "macchecker": {
     "Title": "MAC Lookup",
@@ -271,7 +301,8 @@
     "QueryIP": "Query IP Address",
     "GithubLink": "View Source Code on GitHub",
     "RefreshRuleTests": "Refresh Rule Tests",
-    "Shell": "Command Line API"
+    "Shell": "Command Line API",
+    "qualityScoreExplain": "The IP quality score is calculated based on multiple weighted factors, including the type of IP, whether it is a proxy/VPN, and the number of recent attack events detected from this IP. A higher score indicates better IP quality, reducing the likelihood of being blocked by risk control on some websites."
   },
   "ipInfos": {
     "id": "ipinfos",
@@ -293,6 +324,8 @@
     "SelectSource": "Select IP Geolocation Source",
     "type": "Type",
     "isProxy": "Proxy",
+    "qualityScore": "IP Quality",
+    "qualityScoreUnknown": "Score Unknown",
     "ASNInfo": {
       "note": "Related data for this AS:",
       "asnName": "AS Name:",
@@ -374,7 +407,10 @@
     "gaming": ", Gaming: ",
     "rtc": ", Video Chatting: ",
     "score": "Based on the speed test, got the following quality scores:",
-    "resultNote": ". The score is for reference only."
+    "resultNote": ". The score is for reference only.",
+    "connectionFrom": "Finished speed test from your IP: ",
+    "connectionTo": " to test server:",
+    "connectionEnd": " ."
   },
   "pingtest": {
     "id": "pingtest",
@@ -458,7 +494,8 @@
     "MacChecker": "Open MAC lookup panel",
     "BrowserInfo": "Open Browser Info panel",
     "fullScreenAdvancedTools": "Full Screen Advanced Tools",
-    "Shell": "Command Line API"
+    "Shell": "Command Line API",
+    "SecurityChecklist": "Open Security Checklist panel"
   },
   "page": {
     "title": "IPCheck.ing - Check My IP Address and Geolocation - Check WebRTC Connection IP - DNS Leak Test - Speed Test - Jason Ng Open Source",
@@ -486,7 +523,8 @@
     "personal": "Personal Website",
     "blog": "My Blog",
     "retiremoney": "Future Planner",
-    "twitter": "Twitter"
+    "twitter": "Twitter",
+    "Sponsor": "Sponsor"
   },
   "specialthanks": {
     "Title": "Special Thanks",
@@ -885,6 +923,38 @@
           {
             "type": "improve",
             "change": "DNS leak test can now display regional information"
+          }
+        ]
+      },
+      {
+        "version": "v4.4",
+        "date": "Dec 7, 2024",
+        "content": [
+          {
+            "type": "add",
+            "change": "Language preferences"
+          },
+          {
+            "type": "improve",
+            "change": "Map provider changed to Google"
+          },
+          {
+            "type": "improve",
+            "change": "Other general optimizations"
+          }
+        ]
+      },
+      {
+        "version": "v4.5",
+        "date": "Dec 25, 2024",
+        "content": [
+          {
+            "type": "add",
+            "change": "Add Security Checklist"
+          },
+          {
+            "type": "improve",
+            "change": "Other general optimizations"
           }
         ]
       }

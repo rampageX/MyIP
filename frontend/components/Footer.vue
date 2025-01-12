@@ -9,12 +9,15 @@
     </div>
 
     <div id="about" class="text-center mb-2">
+      <a class="link link-underline-offset link-underline-opacity-0 jn-heart-color"
+        role="button" aria-controls="Sponsor" href="https://github.com/sponsors/jason5ng32" target="_blank">
+        {{ t('about.Sponsor') }} 💖
+      </a>&nbsp;&nbsp;
       <a class="link link-underline-offset link-underline-opacity-0" :class="[isDarkMode ? 'link-light' : 'link-dark']"
         role="button" aria-controls="About" @click.prevent="openAbout">
         {{ t('about.Title') }} <i class="bi bi-arrow-left-circle-fill"></i>
       </a>
     </div>
-
 
     <div class="offcanvas offcanvas-end mt-5 border-0 h-100" :class="[isMobile ? ' w-100' : '']" tabindex="-1"
       id="About" aria-labelledby="AboutLabel" :data-bs-theme="isDarkMode ? 'dark' : 'light'">
@@ -178,6 +181,14 @@ const thanksList = [
     link: 'https://globalping.io/'
   },
   {
+    name: 'ProxyCheck.io',
+    link: 'https://proxycheck.io/'
+  },
+  {
+    name: 'Digital Defense',
+    link: 'https://digital-defense.io/'
+  },
+  {
     name: 'ChatGPT',
     link: 'https://chatgpt.com/'
   }
@@ -221,6 +232,7 @@ defineExpose({
 }
 
 .jn-heart-color {
-  color: red;
+  color:#d63384;
+  text-decoration: none;
 }
 </style>
